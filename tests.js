@@ -1,4 +1,4 @@
-import {processIntegers} from './main.mjs'
+const { processIntegers } = require('./helpers.js')
 
 // Test 1: Single digit numbers
 let test1 = (processIntegers(['1', '2', '3']) === "One,Two,Three")
