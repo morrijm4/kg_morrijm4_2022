@@ -31,7 +31,11 @@ const integers = process.argv.slice(2)
 let string = ""
 integers.forEach((val) => {
     val.split('').forEach((letter) => {
-        string += toPhoneic(parseInt(letter))
+        if (letter === "-") {
+            string += "Negative"
+        } else {
+            string += toPhoneic(parseInt(letter))
+        }
     })
     string += ","
 })
